@@ -141,6 +141,8 @@ func update() {
 	} else {
 		log.Println("移除旧的IP分组成功")
 	}
+	size := len(conf.IpGroup)
+	log.Println("薪分组数量：%d", size)
 	for _, ipGroup := range conf.IpGroup {
 		err = updateIpGroup(iKuai, ipGroup.Name, ipGroup.URL)
 		if err != nil {
