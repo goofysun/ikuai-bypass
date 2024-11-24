@@ -1,7 +1,7 @@
 FROM alpine:latest
  
 WORKDIR /build
-COPY . .
+COPY ikuai-bypass .
 
 RUN apk add --no-cache tzdata
 ENV TZ=Asia/Shanghai
