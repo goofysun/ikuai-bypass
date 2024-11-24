@@ -1,6 +1,7 @@
 FROM alpine:latest
  
 WORKDIR /build
+RUN ls -la
 COPY ikuai-bypass .
 
 RUN apk add --no-cache tzdata
